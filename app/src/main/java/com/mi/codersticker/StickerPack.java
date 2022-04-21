@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-package com.example.samplestickerapp;
+package com.mi.codersticker;
 
 import android.os.Parcel;
 import android.os.Parcelable;

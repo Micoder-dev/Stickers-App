@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
@@ -36,7 +37,16 @@ public class EntryActivity extends BaseActivity {
         }
         progressBar = findViewById(R.id.entry_activity_progress);
         loadListAsyncTask = new LoadListAsyncTask(this);
-        loadListAsyncTask.execute();
+
+        new Handler().postDelayed(new Runnable() {
+// Using handler with postDelayed called runnable run method
+            @Override
+            public void run() {
+                loadListAsyncTask.execute();
+            }
+        }, 4 * 1000);
+
+
     }
 
     private void showStickerPack(ArrayList<StickerPack> stickerPackList) {

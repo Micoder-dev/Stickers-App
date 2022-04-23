@@ -44,7 +44,7 @@ public class EntryActivity extends BaseActivity {
             public void run() {
                 loadListAsyncTask.execute();
             }
-        }, 4 * 1000);
+        }, 2 * 1000);
 
 
     }

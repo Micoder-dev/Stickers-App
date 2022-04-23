@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="@dimen/preview_side_margin"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/sky">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -43,7 +44,8 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/tray_image"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Pack Name" />
+            tools:text="Pack Name"
+            android:textColor="@android:color/white"/>
 
         <ImageView
             android:id="@+id/sticker_pack_animation_indicator"
@@ -147,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:background="@drawable/btn_green"
+                android:background="@drawable/background_border"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackgroundBorderless"

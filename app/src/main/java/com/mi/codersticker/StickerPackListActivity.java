@@ -8,12 +8,19 @@
 
 package com.mi.codersticker;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,8 +56,8 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
         if (getSupportActionBar() != null) {
-            //getSupportActionBar().setTitle(getResources().getQuantityString(R.plurals.title_activity_sticker_packs_list, stickerPackList.size()));
-            getSupportActionBar().hide();
+            getSupportActionBar().setTitle(getResources().getQuantityString(R.plurals.title_activity_sticker_packs_list, stickerPackList.size()));
+            //getSupportActionBar().hide();
         }
 
         fabMenu=findViewById(R.id.fabMenu);
@@ -91,6 +98,68 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         });
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId() == R.id.itmContact)
+        {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            Uri data = Uri.parse("mailto:micoder.com@gmail.com?subject=" + Uri.encode("Subject") + "&body=" + Uri.encode("//Enter your Queries here..."));
+            intent.setData(data);
+            startActivity(intent);
+        }
+        if(item.getItemId() == R.id.itmAbout)
+        {
+            Toast.makeText(StickerPackListActivity.this,"Loading...",Toast.LENGTH_SHORT).show();
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://micoder-dev.github.io/Resume-Page/"));
+            startActivity(browserIntent);
+        }
+        if(item.getItemId() == R.id.itmSettings)
+        {
+            Toast.makeText(StickerPackListActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+        }
+        if(item.getItemId() == R.id.itmShare)
+        {
+            try {
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My application name");
+                String shareMessage= "\nLet me recommend you this application\n\n";
+                shareMessage = shareMessage + "https://play.google.com/store/apps/developer?id=MI_CODER"+"\n\n";
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                startActivity(Intent.createChooser(shareIntent, "choose one"));
+            } catch(Exception e) {
+                //e.toString();
+            }
+        }
+        if(item.getItemId() == R.id.itmExit)
+        {
+            //when exit menu clicked alert dialog
+            new AlertDialog.Builder(this)
+                    .setMessage("Are you sure want to exit???")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            finish();
+                        }
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
 
     @Override
     protected void onResume() {

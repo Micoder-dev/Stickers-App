@@ -27,7 +27,7 @@ import java.net.URL;
 import java.util.List;
 
 class StickerPackValidator {
-    private static final int STATIC_STICKER_FILE_LIMIT_KB = 100;
+    private static final int STATIC_STICKER_FILE_LIMIT_KB = 500;
     private static final int ANIMATED_STICKER_FILE_LIMIT_KB = 500;
     static final int EMOJI_MAX_LIMIT = 3;
     private static final int EMOJI_MIN_LIMIT = 1;

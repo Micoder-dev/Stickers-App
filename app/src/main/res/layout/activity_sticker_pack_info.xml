@@ -18,7 +18,7 @@
             android:id="@+id/tray_icon"
             style="@style/InfoButtonStyle"
             android:clickable="false"
-            android:text="@string/info_screen_tray_icon"
+            android:text="Icon"
             android:textColor="#B9B9B9"
             tools:drawableLeft="@drawable/sticker_3rdparty_web"
             tools:drawableStart="@drawable/sticker_3rdparty_web" />

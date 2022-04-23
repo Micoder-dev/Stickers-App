@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/sunny"
-                android:text="Sticker Packs"
+                android:text="Funny WAStickers"
                 android:textColor="#FFEB3B"
                 android:textSize="30sp"
                 android:shadowColor="@android:color/white"

@@ -10,10 +10,15 @@ package com.mi.codersticker;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -30,6 +35,11 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     private WhiteListCheckAsyncTask whiteListCheckAsyncTask;
     private ArrayList<StickerPack> stickerPackList;
 
+    FloatingActionMenu fabMenu;
+    FloatingActionButton fabSettings;
+    FloatingActionButton fabExit;
+    FloatingActionButton fabShare;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +51,33 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             //getSupportActionBar().setTitle(getResources().getQuantityString(R.plurals.title_activity_sticker_packs_list, stickerPackList.size()));
             getSupportActionBar().hide();
         }
+
+        fabMenu=findViewById(R.id.fabMenu);
+        fabSettings=findViewById(R.id.fabSettings);
+        fabExit=findViewById(R.id.fabExit);
+        fabShare=findViewById(R.id.fabShare);
+
+        fabShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(StickerPackListActivity.this, "Share", Toast.LENGTH_SHORT).show();
+                fabMenu.close(true);
+            }
+        });
+        fabSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(StickerPackListActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+                fabMenu.close(true);
+            }
+        });
+        fabExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(StickerPackListActivity.this, "Exit", Toast.LENGTH_SHORT).show();
+                fabMenu.close(true);
+            }
+        });
 
     }
 

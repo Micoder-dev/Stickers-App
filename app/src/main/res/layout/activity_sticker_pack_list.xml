@@ -95,6 +95,15 @@
         fab:menu_labels_textSize="15sp"
         fab:menu_openDirection="up">
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@android:color/holo_blue_bright"
+            fab:fab_colorPressed="@android:color/black"
+            fab:fab_label="Share App"
+            fab:fab_size="mini"
+            android:src="@drawable/ic_share"/>
+        <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fabSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,15 +121,6 @@
             fab:fab_label="Exit"
             fab:fab_size="mini"
             android:src="@drawable/ic_power"/>
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fabShare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@android:color/holo_blue_bright"
-            fab:fab_colorPressed="@android:color/black"
-            fab:fab_label="Share"
-            fab:fab_size="mini"
-            android:src="@drawable/ic_share"/>
     </com.github.clans.fab.FloatingActionMenu>
 
 </FrameLayout>

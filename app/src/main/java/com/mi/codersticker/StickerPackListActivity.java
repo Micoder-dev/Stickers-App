@@ -27,6 +27,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -47,6 +51,9 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     FloatingActionButton fabSettings;
     FloatingActionButton fabExit;
     FloatingActionButton fabShare;
+    //ads
+    private InterstitialAd interstitial;
+    private static final String AD_UNIT_ID = "ca-app-pub-9312483859588872/2487379574";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +66,28 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             getSupportActionBar().setTitle(getResources().getQuantityString(R.plurals.title_activity_sticker_packs_list, stickerPackList.size()));
             //getSupportActionBar().hide();
         }
+
+        //ads
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this, AD_UNIT_ID, adRequest, new InterstitialAdLoadCallback() {
+            @Override
+            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                // The mInterstitialAd reference will be null until
+                // an ad is loaded.
+                super.onAdLoaded(interstitialAd);
+                interstitial = interstitialAd;
+                interstitialAd.show(StickerPackListActivity.this);
+            }
+
+            @Override
+            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                // Handle the error
+                Toast.makeText(StickerPackListActivity.this, "Ad failed to load, please check your internet connection", Toast.LENGTH_SHORT).show();
+                interstitial = null;
+            }
+        });
+
 
         fabMenu=findViewById(R.id.fabMenu);
         fabSettings=findViewById(R.id.fabSettings);

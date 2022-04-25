@@ -23,13 +23,10 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/background_border">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profileImg"
-                android:layout_width="50dp"
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:src="@mipmap/ic_launcher"/>
-
+                android:src="@drawable/minions_fun"/>
             <TextView
                 android:id="@+id/txtDisplayName"
                 android:layout_width="match_parent"
@@ -42,7 +39,6 @@
                 android:shadowRadius="1"
                 android:gravity="center"
                 android:layout_marginRight="40dp"/>
-
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -52,7 +48,7 @@
     tools:context=".StickerPackListActivity"
     tools:showIn="@layout/activity_sticker_pack_list"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/minios_bg">
+    android:background="@drawable/sky">
 
     <TextView
         android:id="@+id/error_message"

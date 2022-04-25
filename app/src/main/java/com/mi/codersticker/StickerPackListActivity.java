@@ -121,7 +121,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         fabExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StickerPackListActivity.this, "Exit", Toast.LENGTH_SHORT).show();
+                onBackPressed();
                 fabMenu.close(true);
             }
         });
@@ -188,6 +188,21 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+
+        new AlertDialog.Builder(this)
+                .setMessage("Are you sure want to exit???")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
 
 
     @Override

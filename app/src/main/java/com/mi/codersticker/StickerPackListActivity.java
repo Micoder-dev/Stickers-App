@@ -114,7 +114,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         fabSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StickerPackListActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(StickerPackListActivity.this,SettingsActivity.class));
                 fabMenu.close(true);
             }
         });
@@ -154,7 +154,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         }
         if(item.getItemId() == R.id.itmSettings)
         {
-            Toast.makeText(StickerPackListActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(StickerPackListActivity.this,SettingsActivity.class));
         }
         if(item.getItemId() == R.id.itmShare)
         {

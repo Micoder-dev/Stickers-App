@@ -10,20 +10,12 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textColor="@android:color/holo_red_dark" />
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/ssgif"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:src="@drawable/minions2"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"/>
     <ProgressBar
         android:id="@+id/entry_activity_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_above="@+id/ssText"
-        android:layout_marginRight="100dp"/>
+        android:layout_centerVertical="true"/>
     <TextView
         android:id="@+id/ssText"
         android:layout_width="250dp"
@@ -31,9 +23,9 @@
         android:text="Stickers"
         android:gravity="center"
         android:textSize="60sp"
-        android:textColor="#2196F3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
+        android:textColor="#FFEB3B"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
         android:fontFamily="@font/heart"
         android:shadowColor="#00BCD4"
         android:shadowRadius="50"/>

@@ -102,183 +102,91 @@
     },
     {
       "identifier": "2",
-      "name": "Together While Apart",
-      "publisher": "World Health Organization",
-      "tray_image_file": "01.png",
+      "name": "Kids 2",
+      "publisher": "Indhu",
+      "tray_image_file": "kids_logo.jpg",
       "image_data_version": "1",
       "avoid_cache": false,
-      "publisher_email": "",
-      "publisher_website": "",
+      "publisher_email": "micoder.com@gmail.com",
+      "publisher_website": "https://micoder-dev.github.io/Resume-Page/",
       "privacy_policy_website": "",
       "license_agreement_website": "",
-      "animated_sticker_pack": true,
       "stickers": [
         {
-          "image_file": "01_SendingLove.webp",
+          "image_file": "s1.webp",
           "emojis": [
-            "🥰",
-            "😘",
-            "❤️"
-          ]
-        },
-        {
-          "image_file": "02_WellDoThisTogether.webp",
-          "emojis": [
-            "✊",
-            "💪",
-            "🙏"
-          ]
-        },
-        {
-          "image_file": "03_Heart.webp",
-          "emojis": [
-            "❤️",
-            "🥰",
-            "💕"
-          ]
-        },
-        {
-          "image_file": "04_AirHighFive.webp",
-          "emojis": [
-            "🖐",
-            "🙌",
-            "✋"
-          ]
-        },
-        {
-          "image_file": "05_GroupVideoCalling.webp",
-          "emojis": [
-            "📱",
-            "👯",
-            "👋"
-          ]
-        },
-        {
-          "image_file": "06_StayConnected.webp",
-          "emojis": [
-            "📱",
-            "🙋‍♀",
-            "🙋‍♂"
-          ]
-        },
-        {
-          "image_file": "07_OK.webp",
-          "emojis": [
-            "👍",
-            "👌",
+            "☕",
             "🙂"
           ]
         },
         {
-          "image_file": "08_AreYouOK.webp",
+          "image_file": "s2.webp",
           "emojis": [
-            "👋",
-            "❓",
-            "📱"
+            "😄",
+            "😀"
           ]
         },
         {
-          "image_file": "09_StayingHomeMug.webp",
+          "image_file": "s3.webp",
           "emojis": [
-            "☕",
-            "🍵",
-            "🏠"
+            "😆",
+            "😂"
           ]
         },
         {
-          "image_file": "10_WorkingFromBed.webp",
+          "image_file": "s4.webp",
           "emojis": [
-            "👩‍💻",
-            "👨‍💻",
-            "🛏"
+            "😩",
+            "😰"
           ]
         },
         {
-          "image_file": "11_StayCalm.webp",
+          "image_file": "s5.webp",
           "emojis": [
-            "🧘♀",
-            "🧘♂",
-            "🤙"
+            "😭",
+            "💧"
           ]
         },
         {
-          "image_file": "12_Gymnastics.webp",
+          "image_file": "s6.webp",
           "emojis": [
-            "🤸",
-            "🐩",
-            "💪"
+            "😍",
+            "♥"
           ]
         },
         {
-          "image_file": "13_DoubleChecking.webp",
+          "image_file": "s7.webp",
           "emojis": [
-            "📰",
-            "🔎",
-            "🔍"
+            "💔",
+            "👎"
           ]
         },
         {
-          "image_file": "14_CatOnTheLaptop.webp",
+          "image_file": "s8.webp",
           "emojis": [
-            "🐈",
-            "🐱",
-            "💻"
+            "😍",
+            "💑"
           ]
         },
         {
-          "image_file": "15_WorkingFromHomeF.webp",
+          "image_file": "s9.webp",
           "emojis": [
-            "👩‍💻",
-            "🏠",
-            "💻"
+            "😘",
+            "🍪"
           ]
         },
         {
-          "image_file": "16_WorkingFromHomeM.webp",
+          "image_file": "s10.webp",
           "emojis": [
-            "👨‍💻",
-            "🏠",
-            "💻"
+            "🤔",
+            "😐"
           ]
         },
         {
-          "image_file": "17_WashingHands.webp",
+          "image_file": "s11.webp",
           "emojis": [
-            "✋",
-            "💦",
-            "🧼"
-          ]
-        },
-        {
-          "image_file": "18_DontTouchYourFace.webp",
-          "emojis": [
-            "😷",
-            "🤒",
-            "🤧"
-          ]
-        },
-        {
-          "image_file": "19_SocialDistancing.webp",
-          "emojis": [
-            "😷",
-            "🤒",
-            "🏠"
-          ]
-        },
-        {
-          "image_file": "20_SuperheroNurse.webp",
-          "emojis": [
-            "👩‍⚕",
-            "👨‍⚕️",
-            "🩺"
-          ]
-        },
-        {
-          "image_file": "21_YouAreMyHero.webp",
-          "emojis": [
-            "🙏",
-            "🦸‍♀️",
-            "🦸"
+            "😱",
+            "😵"
           ]
         }
       ]
@@ -549,6 +457,132 @@
             "👩‍💻",
             "🏠",
             "💻"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "name": "CAT",
+      "publisher": "Indhu",
+      "tray_image_file": "01.png",
+      "image_data_version": "1",
+      "avoid_cache": false,
+      "publisher_email": "micoder.com@gmail.com",
+      "publisher_website": "https://micoder-dev.github.io/Resume-Page/",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "stickers": [
+        {
+          "image_file": "s1.webp",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "s2.webp",
+          "emojis": [
+            "😄",
+            "😀"
+          ]
+        },
+        {
+          "image_file": "s3.webp",
+          "emojis": [
+            "😆",
+            "😂"
+          ]
+        },
+        {
+          "image_file": "s4.webp",
+          "emojis": [
+            "😩",
+            "😰"
+          ]
+        },
+        {
+          "image_file": "s5.webp",
+          "emojis": [
+            "😭",
+            "💧"
+          ]
+        },
+        {
+          "image_file": "s6.webp",
+          "emojis": [
+            "😍",
+            "♥"
+          ]
+        },
+        {
+          "image_file": "s7.webp",
+          "emojis": [
+            "💔",
+            "👎"
+          ]
+        },
+        {
+          "image_file": "s8.webp",
+          "emojis": [
+            "😍",
+            "💑"
+          ]
+        },
+        {
+          "image_file": "s9.webp",
+          "emojis": [
+            "😘",
+            "🍪"
+          ]
+        },
+        {
+          "image_file": "s10.webp",
+          "emojis": [
+            "🤔",
+            "😐"
+          ]
+        },
+        {
+          "image_file": "s11.webp",
+          "emojis": [
+            "😱",
+            "😵"
+          ]
+        },
+        {
+          "image_file": "s12.webp",
+          "emojis": [
+            "😱",
+            "😵"
+          ]
+        },
+        {
+          "image_file": "s13.webp",
+          "emojis": [
+            "😱",
+            "😵"
+          ]
+        },
+        {
+          "image_file": "s14.webp",
+          "emojis": [
+            "😱",
+            "😵"
+          ]
+        },
+        {
+          "image_file": "s15.webp",
+          "emojis": [
+            "😱",
+            "😵"
+          ]
+        },
+        {
+          "image_file": "s16.webp",
+          "emojis": [
+            "😱",
+            "😵"
           ]
         }
       ]

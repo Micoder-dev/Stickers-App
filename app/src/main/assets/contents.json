@@ -462,10 +462,10 @@
       ]
     },
     {
-      "identifier": "5",
-      "name": "CAT",
+      "identifier": "6",
+      "name": "BABY",
       "publisher": "Indhu",
-      "tray_image_file": "01.png",
+      "tray_image_file": "baby_logo.jpg",
       "image_data_version": "1",
       "avoid_cache": false,
       "publisher_email": "micoder.com@gmail.com",
@@ -541,48 +541,6 @@
           "emojis": [
             "🤔",
             "😐"
-          ]
-        },
-        {
-          "image_file": "s11.webp",
-          "emojis": [
-            "😱",
-            "😵"
-          ]
-        },
-        {
-          "image_file": "s12.webp",
-          "emojis": [
-            "😱",
-            "😵"
-          ]
-        },
-        {
-          "image_file": "s13.webp",
-          "emojis": [
-            "😱",
-            "😵"
-          ]
-        },
-        {
-          "image_file": "s14.webp",
-          "emojis": [
-            "😱",
-            "😵"
-          ]
-        },
-        {
-          "image_file": "s15.webp",
-          "emojis": [
-            "😱",
-            "😵"
-          ]
-        },
-        {
-          "image_file": "s16.webp",
-          "emojis": [
-            "😱",
-            "😵"
           ]
         }
       ]

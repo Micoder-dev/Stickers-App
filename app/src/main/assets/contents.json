@@ -544,6 +544,125 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "name": "Mixed",
+      "publisher": "Ind",
+      "tray_image_file": "smile_logo.jpg",
+      "image_data_version": "1",
+      "avoid_cache": false,
+      "publisher_email": "micoder.com@gmail.com",
+      "publisher_website": "https://micoder-dev.github.io/Resume-Page/",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "s1.webp",
+          "emojis": [
+            "🥰",
+            "😘",
+            "❤️"
+          ]
+        },
+        {
+          "image_file": "s2.webp",
+          "emojis": [
+            "✊",
+            "💪",
+            "🙏"
+          ]
+        },
+        {
+          "image_file": "s3.webp",
+          "emojis": [
+            "❤️",
+            "🥰",
+            "💕"
+          ]
+        },
+        {
+          "image_file": "s4.webp",
+          "emojis": [
+            "🖐",
+            "🙌",
+            "✋"
+          ]
+        },
+        {
+          "image_file": "s5.webp",
+          "emojis": [
+            "📱",
+            "👯",
+            "👋"
+          ]
+        },
+        {
+          "image_file": "s6.webp",
+          "emojis": [
+            "📱",
+            "🙋‍♀",
+            "🙋‍♂"
+          ]
+        },
+        {
+          "image_file": "s7.webp",
+          "emojis": [
+            "👍",
+            "👌",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "s8.webp",
+          "emojis": [
+            "👋",
+            "❓",
+            "📱"
+          ]
+        },
+        {
+          "image_file": "s9.webp",
+          "emojis": [
+            "☕",
+            "🍵",
+            "🏠"
+          ]
+        },
+        {
+          "image_file": "s10.webp",
+          "emojis": [
+            "👩‍💻",
+            "👨‍💻",
+            "🛏"
+          ]
+        },
+        {
+          "image_file": "s11.webp",
+          "emojis": [
+            "🧘♀",
+            "🧘♂",
+            "🤙"
+          ]
+        },
+        {
+          "image_file": "s12.webp",
+          "emojis": [
+            "🤸",
+            "🐩",
+            "💪"
+          ]
+        },
+        {
+          "image_file": "s13.webp",
+          "emojis": [
+            "📰",
+            "🔎",
+            "🔍"
+          ]
+        }
+      ]
     }
   ]
 }
